@@ -1,0 +1,69 @@
+name: Deploy DocC Documentation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      # ====================== 生成正确的静态网站 ======================
+      - name: Convert DocC Archive
+        run: |
+          mkdir -p site
+          xcrun docc process-archive transform-for-static-hosting \
+            $(find docs -name "*.doccarchive" -maxdepth 1) \
+            --output-path site \
+            --hosting-base-path "${{ github.event.repository.name }}"
+
+      # ====================== 自动跳转首页 ======================
+      - name: Create Root Redirect
+        run: |
+          cat > site/index.html <<EOF
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=documentation/rfidmanager/">
+            <title>SDK Documentation</title>
+          </head>
+          <body></body>
+          </html>
+          EOF
+          touch site/.nojekyll
+
+      # ====================== 上传 ======================
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'site'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
