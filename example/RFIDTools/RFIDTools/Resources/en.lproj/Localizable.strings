@@ -1,0 +1,274 @@
+/* 
+  Localizable.strings
+  RFIDTools
+
+  Created by zsg on 2024/4/26.
+  
+*/
+
+"Inventory" = "Inventory";
+"Read-Write" = "Read-Write";
+"Lock" = "Lock";
+"Unlock" = "Unlock";
+"Kill" = "Kill";
+"Lock-Kill" = "Lock-Kill";
+"Lock/Unlock" = "Lock/Unlock";
+"UHF Settings" = "UHF Settings";
+"BT Settings" = "BT Settings";
+"Mainboard" = "Mainboard";
+"Mainboard Settings" = "Mainboard";
+"Radar" = "Radar";
+"Location" = "Location";
+"Barcode" = "Barcode";
+"Upgrade" = "Upgrade";
+"Settings" = "Settings";
+
+"Connect" = "Connect";
+"Disconnect" = "Disconnect";
+"disconnected" = "disconnected";
+"connected" = "connected";
+"No Device" = "No Device";
+"Connecting" = "Connecting";
+"Disconnecting" = "Disconnecting";
+"Unknown" = "Unknown";
+"Select Device" = "Select Device";
+"Connect Fail" = "Connect Fail";
+"Connect Success" = "Connect Success";
+"BLE Disconnect" = "BLE Disconnect";
+"USB Disconnect" = "USB Disconnect";
+"Initializing" = "Initializing";
+
+"Page Manager" = "Page Manager";
+"At least one page must be kept" = "At least one page must be kept";
+
+// DeviceInfo
+"Device Information" = "Device Information";
+"Loading device information..." = "Loading device information...";
+"Mainboard Version:" = "Mainboard Version:";
+"Mainboard:" = "Mainboard:";
+"Mainboard" = "Mainboard";
+"Bluetooth Firmware:" = "Bluetooth Firmware:";
+"Bluetooth Hardware:" = "Bluetooth Hardware:";
+"Bluetooth Software:" = "Bluetooth Software:";
+"Bluetooth Version:" = "Bluetooth Version:";
+"Bluetooth" = "Bluetooth";
+"UHF Version" = "UHF Version";
+"UHF Hardware:" = "UHF Hardware:";
+"UHF Firmware:" = "UHF Firmware:";
+"UHF" = "UHF";
+"Hardware Version" = "Hardware Version";
+"Firmware Version" = "Firmware Version";
+"Software Version" = "Software Version";
+"Firmware" = "Firmware";
+"Hardware" = "Hardware";
+"Software" = "Software";
+"Temperature" = "Temperature";
+"Battery" = "Battery";
+"Level" = "Level";
+"Device Battery:" = "Device Battery:";
+"Module Temperature:" = "Module Temperature:";
+"Serial Number:" = "Serial Number:";
+
+// inventory
+"Filter" = "Filter";
+"Offset:" = "Offset:";
+"Length:" = "Length:";
+"Offset(word):" = "Offset(word):";
+"Length(word):" = "Length(word):";
+"Bank:" = "Bank:";
+"Data:" = "Data:";
+"Clear" = "Clear";
+"Single" = "Single";
+"Tag:" = "Tag:";
+"All:" = "All:";
+"Time:" = "Time:";
+"Count" = "Count";
+"Antenna" = "Antenna";
+"Ant" = "Ant";
+"Start" = "Start";
+"Stop" = "Stop";
+"Inventory Duration:" = "Inventory Duration:";
+"Copy EPC" = "Copy EPC";
+"Copy TID" = "Copy TID";
+"Copy USER" = "Copy USER";
+"Copy RESERVED" = "Copy RESERVED";
+
+"Please stop inventory first" = "Please stop inventory first";
+"No data to export" = "No data to export";
+"Exporting data..." = "Exporting data...";
+"Create .xlsx File fail" = "Create .xlsx File fail";
+"Export Success.\nSave directory: RFIDTools/export" = "Export Success.\nSave directory: RFIDTools/export";
+
+
+// settings
+"Frequency" = "Frequency";
+"Power" = "Power";
+"RFLink" = "RFLink";
+"Inventory Bank" = "Inventory Bank";
+"Buzzer" = "Buzzer";
+"Set" = "Set";
+"Get" = "Get";
+"Open" = "Open";
+"Close" = "Close";
+"Set Success" = "Set Success";
+"Set Failure" = "Set Failure";
+"Get Success" = "Get Success";
+"Get Failure" = "Get Failure";
+"Failure" = "Failure";
+"Success" = "Success";
+"Reset UHF" = "Reset UHF";
+"Reset Mainboard" = "Reset Mainboard";
+"Reset Success" = "Reset Success";
+"Reset Failure" = "Reset Failure";
+"Auto Reconnection" = "Auto Reconnection";
+"Reset UHF Confirm" = "Confirm UHF reset?";
+"Antenna States" = "Antenna States";
+"Antenna 1" = "Antenna 1";
+"Antenna 2" = "Antenna 2";
+"Antenna 3" = "Antenna 3";
+"Antenna 4" = "Antenna 4";
+
+// barcode
+"Scan" = "Scan";
+"Barcode Type" = "Barcode Type";
+"Continuous" = "Continuous";
+"Duplicate" = "Duplicate";
+"Scan Timeout" = "Scan Timeout";
+"Barcode Config" = "Barcode Config";
+"Paramter" = "Paramter";
+"Barcode Paramter" = "Barcode Paramter";
+"Hexadecimal" = "Hexadecimal";
+
+//
+"Dynamic Distance" = "Dynamic Distance"; 
+"Please use the portrait orientation." = "Please use the portrait orientation.";
+"Read" = "Read";
+"Write" = "Write";
+"(word)" = "(word)";
+"Password:" = "Password:";
+"LockMode:" = "LockMode:";
+"TagBank:" = "TagBank:";
+"PermanentLock" = "PermanentLock";
+"PermanentOpen" = "PermanentOpen";
+"PermanentUnlock" = "PermanentUnlock";
+"can't be default password" = "can't be default password";
+"TagBank can't be empty" = "TagBank can't be empty";
+
+
+// 
+"Bluetooth is connected" = "Bluetooth is connected";
+"Bluetooth is disconnected" = "Bluetooth is disconnected";
+"inventorying" = "inventorying";
+"Request timeout" = "Request timeout";
+"connect timeout" = "connect timeout";
+"Device is inventorying" = "Device is inventorying";
+"Device is radarLocalizing" = "Device is radarLocalizing";
+"Device is localizing" = "Device is localizing";
+"Device is barcodeScanning" = "Device is barcodeScanning";
+"Filter parameters must exist" = "Filter parameters must exist";
+"Filter bank parameter error" = "Filter bank parameter error";
+"Filter offset parameter error" = "Filter offset parameter error";
+"Filter length parameter error" = "Filter length parameter error";
+"Filter data parameter empty" = "Filter data parameter empty";
+"Filter data parameter error" = "Filter data parameter error";
+"bank parameter error" = "bank parameter error";
+"offset parameter error" = "offset parameter error";
+"length parameter error" = "length parameter error";
+"data parameter empty" = "data parameter empty";
+"data parameter error" = "data parameter error";
+"password parameter empty" = "password parameter empty";
+"password parameter error" = "password parameter error";
+"password can't use default value" = "password can't use default value";
+"frequncy parameter is invalid" = "frequncy parameter is invalid";
+"power parameter is invalid" = "power parameter is invalid";
+"protocol parameter is invalid" = "protocol parameter is invalid";
+"rfLink parameter is invalid" = "rfLink parameter is invalid";
+"Gen2 SelectAction parameter is invalid" = "Gen2 SelectAction parameter is invalid";
+"Gen2 StartQ parameter is invalid" = "Gen2 StartQ parameter is invalid";
+"Gen2 MinQ parameter is invalid" = "Gen2 MinQ parameter is invalid";
+"Gen2 MaxQ parameter is invalid" = "Gen2 MaxQ parameter is invalid";
+"Gen2 LF parameter is invalid" = "Gen2 LF parameter is invalid";
+"menmoryBank parameter is invalid" = "menmoryBank parameter is invalid";
+"menmoryOffset parameter is invalid" = "menmoryOffset parameter is invalid";
+"menmoryLength parameter is invalid" = "menmoryLength parameter is invalid";
+"No Tag Found" = "No Tag Found";
+"No Permission" = "No Permission";
+"Memory Overflow" = "Memory Overflow";
+"Memory Lock" = "Memory Lock";
+"No Tag Reply" = "No Tag Reply";
+"Password Wrong" = "Password Wrong";
+"Buffer Overflow" = "Buffer Overflow";
+"No Enough Power On Tag" = "No Enough Power On Tag";
+"Parse Error" = "Parse Error";
+"Operate Fail" = "Operate Fail";
+"lockMode parameter error" = "lockMode parameter error";
+"lockBank parameter error" = "lockBank parameter error";
+
+
+// Upgrade
+"Upgrade Type" = "Upgrade Type:";
+"Mainboard" = "Mainboard";
+"UHF" = "UHF";
+"Bluetooth" = "Bluetooth";
+"Select File" = "Select File";
+"Select File First" = "Please select a file first";
+"Failed to read file" = "Failed to read file";
+"Starting to upgrade..." = "Starting to upgrade...";
+"Upgrading..." = "Upgrading...";
+"Upgrade Successful" = "Upgrade Successful";
+"Upgrade Failed" = "Upgrade Failed";
+
+"Upgrade type param error" = "Upgrade type param error";
+"Upgrade file data is empty" = "Upgrade file data is empty";
+"Failed to start the upgrade" = "Failed to start the upgrade";
+"Failed to send upgrade file data" = "Failed to send upgrade file data";
+"Failed to stop the upgrade" = "Failed to stop the upgrade";
+
+
+// Bluetooth Settings
+"BT Settings Warning" = "Warning: Bluetooth parameter changes may cause device bluetooth to restart";
+"Bluetooth Name" = "Bluetooth Name";
+"Enter bluetooth name" = "Enter bluetooth name";
+"MAC Address" = "MAC Address";
+"Baud Rate" = "Baud Rate";
+"Pairing PinKey" = "Pairing PinKey";
+"Enter 6 digits" = "Enter 6 digits";
+"Keyboard Layout" = "Keyboard Layout";
+"HID Key Interval(ms)" = "HID Key Interval(ms)";
+"Connection Ready Time(ms)" = "Connection Ready Time(ms)";
+"Min Connection Time(ms)" = "Min Connection Time(ms)";
+"Max Connection Time(ms)" = "Max Connection Time(ms)";
+"Min Send Time(ms)" = "Min Send Time(ms)";
+"Bind Attribute" = "Bind Attribute";
+"HID Keyboard Service" = "HID Keyboard Service";
+"Serial Service" = "Serial Service";
+"Hardware Version" = "Hardware Version";
+"Firmware Version" = "Firmware Version";
+"Software Version" = "Software Version";
+"Manufacturer Name" = "Manufacturer Name";
+"Remove BT Bonds" = "Remove BT Bonds";
+"Reset Bluetooth" = "Reset Bluetooth";
+"Reset Bluetooth Confirm" = "Confirm Bluetooth reset?";
+
+// Mainboard Settings
+"Work Mode" = "Work Mode";
+"Command Mode" = "Command Mode";
+"USB HID Continuous" = "USB HID Continuous";
+"BT HID Single" = "BT HID Single";
+"BT HID Continuous" = "BT HID Continuous";
+"Virtual COM" = "Virtual COM";
+"USB HID Single" = "USB HID Single";
+"Offline Reading" = "Offline Reading";
+"Key Mode" = "Key Mode";
+"Single Press" = "Single Press";
+"Long Press" = "Long Press";
+"Idle Timeout (minutes)" = "Idle Timeout (minutes)";
+"Wait Connect Timeout (minutes)" = "Wait Connect Timeout (minutes)";
+"Buzzer" = "Buzzer";
+"Rssi" = "Rssi";
+"Reset Mainboard" = "Reset Mainboard";
+"Idle must be between 3-65535 minutes" = "Idle must be between 3-65535 minutes";
+"Wait Connect Timeout must be between 1-65535 minutes" = "Wait Connect Timeout must be between 1-65535 minutes";
+"Reset Mainboard Confirm" = "Confirm mainboard reset?";
+"Confirm" = "Confirm";
+"Cancel" = "Cancel";

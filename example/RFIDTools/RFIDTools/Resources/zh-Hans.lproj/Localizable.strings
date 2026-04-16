@@ -1,0 +1,278 @@
+/* 
+  Localizable.strings
+  RFIDTools
+
+  Created by zsg on 2024/4/26.
+  
+*/
+
+"Inventory" = "盘点";
+"Read-Write" = "读-写";
+"Lock" = "锁定";
+"Unlock" = "解锁";
+"Kill" = "销毁";
+"Lock-Kill" = "锁-销毁";
+"Lock/Unlock" = "锁定/解锁";
+"UHF Settings" = "UHF设置";
+"BT Settings" = "蓝牙设置";
+"Mainboard" = "主板";
+"Mainboard Settings" = "主板设置";
+"Radar" = "雷达";
+"Location" = "定位";
+"Barcode" = "扫码";
+"Upgrade" = "升级";
+"Settings" = "设置";
+
+"Connect" = "连接";
+"Disconnect" = "断开";
+"disconnected" = "已断开";
+"connected" = "已连接";
+"No Device" = "未连接";
+"Connecting" = "连接中";
+"Disconnecting" = "断开中";
+"Unknown" = "未知";
+"Select Device" = "选择设备";
+"Connect Fail" = "连接失败";
+"Connect Success" = "连接成功";
+"BLE Disconnect" = "蓝牙未连接";
+"USB Disconnect" = "USB未连接";
+"Initializing" = "初始化中...";
+
+"Page Manager" = "页面管理";
+"At least one page must be kept" = "至少保留一个页面";
+
+
+
+// DeviceInfo
+"Device Information" = "设备信息";
+"Loading device information..." = "正在加载设备信息...";
+"Mainboard Version:" = "主板版本:";
+"Mainboard:" = "主板版本:";
+"Mainboard" = "主板";
+"Bluetooth Firmware:" = "蓝牙固件版本:";
+"Bluetooth Hardware:" = "蓝牙硬件版本:";
+"Bluetooth Software:" = "蓝牙软件版本:";
+"Bluetooth Version:" = "蓝牙版本:";
+"Bluetooth" = "蓝牙";
+"UHF Version" = "UHF版本";
+"UHF Hardware:" = "UHF硬件版本:";
+"UHF Firmware:" = "UHF固件版本:";
+"UHF" = "UHF";
+"Hardware Version" = "硬件版本";
+"Firmware Version" = "固件版本";
+"Software Version" = "软件版本";
+"Firmware" = "固件";
+"Hardware" = "硬件";
+"Software" = "软件";
+"Temperature" = "温度";
+"Battery" = "电量";
+"Level" = "电量";
+"Device Battery:" = "设备电量:";
+"Module Temperature:" = "模块温度:";
+"Serial Number:" = "序列号:";
+
+
+// inventory
+"Filter" = "过滤";
+"Offset:" = "地址:";
+"Length:" = "长度:";
+"Offset(word):" = "地址(字):";
+"Length(word):" = "长度(字):";
+"Bank:" = "区域:";
+"Data:" = "数据:";
+"Clear" = "清空";
+"Single" = "单步";
+"Tag:" = "标签:";
+"All:" = "总计:";
+"Time:" = "时间:";
+"Count" = "数量";
+"Antenna" = "天线";
+"Ant" = "天线";
+"Start" = "开始";
+"Stop" = "停止";
+"Inventory Duration:" = "盘点持续时间:";
+"Copy EPC" = "复制 EPC";
+"Copy TID" = "复制 TID";
+"Copy USER" = "复制 USER";
+"Copy RESERVED" = "复制 RESERVED";
+
+"Please stop inventory first" = "请先停止盘点";
+"No data to export" = "无数据导出";
+"Exporting data..." = "导出中...";
+"Create .xlsx File fail" = "创建.xlsx文件失败";
+"Export Success" = "导出成功";
+"Export Success.\nSave directory: RFIDTools/export" = "导出成功.\n保存目录: RFIDTools/export";
+
+
+// settings
+"Frequency" = "频率";
+"Power" = "功率";
+"RFLink" = "链路";
+"Inventory Bank" = "盘点模式";
+"Buzzer" = "蜂鸣器";
+"Set" = "设置";
+"Get" = "获取";
+"Open" = "打开";
+"Close" = "关闭";
+"Set Success" = "设置成功";
+"Set Failure" = "设置失败";
+"Get Success" = "获取成功";
+"Get Failure" = "获取失败";
+"Failure" = "失败";
+"Success" = "成功";
+"Reset UHF" = "重置UHF模块";
+"Reset Mainboard" = "重置主板";
+"Reset Success" = "重置成功";
+"Reset Failure" = "重置失败";
+"Auto Reconnection" = "自动重连";
+"Reset UHF Confirm" = "确定要重置UHF吗？";
+"Antenna States" = "天线状态";
+"Antenna 1" = "天线1";
+"Antenna 2" = "天线2";
+"Antenna 3" = "天线3";
+"Antenna 4" = "天线4";
+
+
+// barcode
+"Scan" = "扫描";
+"Barcode Type" = "条码类型";
+"Continuous" = "连续扫描";
+"Duplicate" = "重复标签";
+"Scan Timeout" = "扫描超时";
+"Barcode Config" = "扫码设置";
+"Paramter" = "参数";
+"Barcode Paramter" = "扫描头参数";
+"Hexadecimal" = "十六进制";
+
+
+//
+"Dynamic Distance" = "动态距离"; 
+"Please use the portrait orientation." = "请使用竖屏方向";
+"Read" = "读";
+"Write" = "写";
+"(word)" = "(字)";
+"Password:" = "密码:";
+"LockMode:" = "锁定模式:";
+"TagBank:" = "数据区域:";
+"PermanentLock" = "永久锁定";
+"PermanentOpen" = "永久开放";
+"PermanentUnlock" = "永久解锁";
+"can't be default password" = "不能使用默认密码";
+"TagBank can't be empty" = "数据区域参数不能为空";
+
+
+// 
+"Bluetooth is connected" = "蓝牙已连接";
+"Bluetooth is disconnected" = "蓝牙未连接";
+"Request timeout" = "请求超时";
+"connect timeout" = "连接超时";
+"Device is inventorying" = "设备正在盘点";
+"Device is radarLocalizing" = "设备正在雷达定位";
+"Device is localizing" = "设备正在定位";
+"Device is barcodeScanning" = "设备正在扫描条码";
+"Filter parameters must exist" = "过滤参数必须填写";
+"Filter bank parameter error" = "过滤bank参数错误";
+"Filter offset parameter error" = "过滤offset参数错误";
+"Filter length parameter error" = "过滤length度参数错误";
+"Filter data parameter empty" = "过滤data参数为空";
+"Filter data parameter error" = "过滤data参数错误";
+"bank parameter error" = "bank参数错误";
+"offset parameter error" = "offset参数错误";
+"length parameter error" = "length参数错误";
+"data parameter empty" = "data参数为空";
+"data parameter error" = "data参数错误";
+"password parameter empty" = "密码参数为空";
+"password parameter error" = "密码参数错误";
+"password can't use default value" = "密码不能使用默认值";
+"frequncy parameter is invalid" = "频率参数无效";
+"power parameter is invalid" = "功率参数无效";
+"protocol parameter is invalid" = "协议参数无效";
+"rfLink parameter is invalid" = "射频链路参数无效";
+"Gen2 SelectAction parameter is invalid" = "Gen2 SelectAction参数无效";
+"Gen2 StartQ parameter is invalid" = "Gen2 StartQ参数无效";
+"Gen2 MinQ parameter is invalid" = "Gen2 MinQ参数无效";
+"Gen2 MaxQ parameter is invalid" = "Gen2 MaxQ参数无效";
+"Gen2 LF parameter is invalid" = "Gen2 LF参数无效";
+"menmoryBank parameter is invalid" = "menmoryBank参数无效";
+"menmoryOffset parameter is invalid" = "menmoryOffset参数无效";
+"menmoryLength parameter is invalid" = "menmoryLength参数无效";
+"No Tag Found" = "未找到标签";
+"No Permission" = "没有权限";
+"Memory Overflow" = "数据区超限";
+"Memory Lock" = "数据区被锁定";
+"No Tag Reply" = "无响应标签";
+"Password Wrong" = "密码错误";
+"Buffer Overflow" = "缓冲区溢出";
+"No Enough Power On Tag" = "标签能量不足";
+"Parse Error" = "解析错误";
+"Operate Fail" = "操作失败";
+"lockMode parameter error" = "lockMode参数错误";
+"lockBank parameter error" = "lockBank参数错误";
+
+
+// 升级
+"Upgrade Type" = "升级类型:";
+"Mainboard" = "主板";
+"UHF" = "UHF";
+"Bluetooth" = "蓝牙";
+"Select File" = "选择文件";
+"Select File First" = "请先选择文件";
+"Failed to read file" = "文件读取失败";
+"Starting to upgrade..." = "开始升级中...";
+"Upgrading..." = "升级中...";
+"Upgrade Successful" = "升级成功";
+"Upgrade Failed" = "升级失败";
+
+"Upgrade type param error" = "升级类型参数错误";
+"Upgrade file data is empty" = "升级文件数据为空";
+"Failed to start the upgrade" = "开启升级失败";
+"Failed to send upgrade file data" = "发送升级文件数据失败";
+"Failed to stop the upgrade" = "停止升级失败";
+
+
+// Bluetooth Settings
+"BT Settings Warning" = "警告：蓝牙参数变动可能会导致设备蓝牙重启";
+"Bluetooth Name" = "蓝牙名称";
+"Enter bluetooth name" = "请输入蓝牙名称";
+"MAC Address" = "MAC地址";
+"Baud Rate" = "波特率";
+"Pairing PinKey" = "配对PinKey";
+"Enter 6 digits" = "请输入六位数字";
+"Keyboard Layout" = "键盘布局";
+"HID Key Interval(ms)" = "HID键盘间隔(ms)";
+"Connection Ready Time(ms)" = "连接准备时间(ms)";
+"Min Connection Time(ms)" = "最小连接时间(ms)";
+"Max Connection Time(ms)" = "最大连接时间(ms)";
+"Min Send Time(ms)" = "最小发送时间(ms)";
+"Bind Attribute" = "蓝牙绑定属性";
+"HID Keyboard Service" = "HID键盘服务";
+"Serial Service" = "串口透传服务";
+"Hardware Version" = "硬件版本号";
+"Firmware Version" = "固件版本号";
+"Software Version" = "软件版本";
+"Manufacturer Name" = "厂商名称";
+"Remove BT Bonds" = "删除绑定设备";
+"Reset Bluetooth" = "重置蓝牙参数";
+"Reset Bluetooth Confirm" = "确定要重置蓝牙参数吗？";
+
+// Mainboard Settings
+"Work Mode" = "工作模式";
+"Command Mode" = "命令模式";
+"USB HID Continuous" = "USB HID 连续盘点";
+"BT HID Single" = "蓝牙HID 单次盘点";
+"BT HID Continuous" = "蓝牙HID 连续盘点";
+"Virtual COM" = "虚拟串口";
+"USB HID Single" = "USB HID 单次盘点";
+"Offline Reading" = "离线读取模式";
+"Key Mode" = "按键方式";
+"Single Press" = "点按";
+"Long Press" = "长按";
+"Idle Timeout (minutes)" = "空闲超时休眠时长（分钟）";
+"Wait Connect Timeout (minutes)" = "等待连接超时休眠（分钟）";
+"Buzzer" = "蜂鸣器";
+"Rssi" = "Rssi";
+"Idle must be between 3-65535 minutes" = "空闲超时休眠时长必须在3-65535分钟之间";
+"Wait Connect Timeout must be between 1-65535 minutes" = "等待连接超时参数必须在1-65535分钟之间";
+"Reset Mainboard Confirm" = "确定要重置主板吗？";
+"Confirm" = "确认";
+"Cancel" = "取消";
