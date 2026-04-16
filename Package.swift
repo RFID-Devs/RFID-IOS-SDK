@@ -6,19 +6,20 @@ import PackageDescription
 let package = Package(
     name: "RFID-IOS-SDK",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v12),
+        .macOS(.v12)
     ],
     products: [
         .library(
-            name: "RFIDBleSDK",
-            targets: ["RFIDBleSDK"]
+            name: "RFIDManager",
+            targets: ["RFIDManager"]
         ),
     ],
     targets: [
         .binaryTarget(
-            name: "RFIDBleSDK",
-            url: "https://github.com/RFID-Devs/RFID-IOS-SDK/releases/download/v1.1.2/RFIDBleSDK.xcframework.zip",
-            checksum: "cbbb60a8b5b63933d40e36866a8ae22af0861655569533c9449dca917aed1a7b"
+            name: "RFIDManager",
+            url: "https://github.com/RFID-Devs/RFID-IOS-SDK/releases/download/v2.0.0/RFIDManager.xcframework.zip",
+            checksum: "703d4bf26873d13fa8ada6c953da62ef61c7e2a3f7c8a0be70018050e816ae7b"
         )
     ]
 )
