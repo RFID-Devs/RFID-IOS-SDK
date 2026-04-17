@@ -69,7 +69,7 @@ struct MainView: View {
             }
         }
         .onAppear {
-            LogUtil.shared.showLog = true
+//            LogUtil.shared.showLog = true
 
             RFIDBleManager.shared.setConnectStateUpdateBlock { peripheral, state in
                 print("---------- peripheral=\(peripheral), state=\(state)")

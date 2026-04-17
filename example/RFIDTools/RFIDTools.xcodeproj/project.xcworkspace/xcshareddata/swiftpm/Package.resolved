@@ -1,5 +1,5 @@
 {
-  "originHash" : "9df483d0011f9e646fbbd8b12b9f9bf8f42953d44971f6e9f18d8341d18f567b",
+  "originHash" : "b27f71018f046a54c34d879035045255149b1b04adb3cc8a476aa559bb840d30",
   "pins" : [
     {
       "identity" : "libxlsxwriter",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "69e5c5e1cee8209e4e47ff14065f02dda7d33399",
         "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "rfid-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RFID-Devs/RFID-IOS-SDK.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b661ed31cf95bea43612df15fcae2bab3a4f8e52"
       }
     }
   ],
