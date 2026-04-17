@@ -60,3 +60,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+*.svn
+.DS_Store
+*/.DS_Store
+**/.DS_Store
