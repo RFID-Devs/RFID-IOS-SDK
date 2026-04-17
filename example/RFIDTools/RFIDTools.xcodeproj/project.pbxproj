@@ -12,7 +12,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		683FB1F22F90C38A005AECD1 /* RFIDManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RFIDManager.xcframework; path = Lib/RFIDManager.xcframework; sourceTree = "<group>"; };
 		C09EDFF32DF185CF000D06CE /* RFIDTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFIDTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,7 +69,6 @@
 		C09EE04E2DF188D8000D06CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				683FB1F22F90C38A005AECD1 /* RFIDManager.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
