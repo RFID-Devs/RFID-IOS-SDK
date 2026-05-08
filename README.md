@@ -29,4 +29,4 @@ RFIDManager is an RFID SDK designed specifically for Apple platforms, providing 
 
 - [RFIDManager API Documentation](https://rfid-devs.github.io/RFID-IOS-SDK)
 - [Meet RFIDManager](https://rfid-devs.github.io/RFID-IOS-SDK/tutorials/meet-rfidmanager)
-- [RFIDTools (example app)](https://apps.apple.com/us/app/rfid-tools/id6504855704): Available on the App Store and can be downloaded and installed as an integration reference
+- [RFIDTools (example app)](https://apps.apple.com/us/app/rfid-tools/id6504855704): Available on the App Store and can be installed as an integration reference
