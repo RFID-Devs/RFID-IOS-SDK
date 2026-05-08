@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RFIDManager",
-            url: "https://github.com/RFID-Devs/RFID-IOS-SDK/releases/download/v2.0.0/RFIDManager.xcframework.zip",
-            checksum: "22a35f4627bb7b9e95c79a5de6085e61b26d2de7fd01c8f112d1023bd99aadaa"
+            url: "https://github.com/RFID-Devs/RFID-IOS-SDK/releases/download/v2.0.1/RFIDManager.xcframework.zip",
+            checksum: "cb0191dfee4b97ee003063730fe74f7616d06b5fcfa76a9b41a63fa1052fd4db"
         )
     ]
 )
