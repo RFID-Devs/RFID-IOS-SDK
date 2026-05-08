@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68CB43E62FAC7D9100B19E04 /* RFIDManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */; };
-		68CB43E72FAC7D9100B19E04 /* RFIDManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68CB44622FAD802400B19E04 /* RFIDManager in Frameworks */ = {isa = PBXBuildFile; productRef = 68CB44612FAD802400B19E04 /* RFIDManager */; };
 		C09EE0582DF189F2000D06CE /* libxlsxwriter in Frameworks */ = {isa = PBXBuildFile; productRef = C09EE0572DF189F2000D06CE /* libxlsxwriter */; };
 /* End PBXBuildFile section */
 
@@ -21,17 +20,6 @@
 			files = (
 			);
 			name = "Embed ExtensionKit Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68D882C62FAC6CD800A15ACA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				68CB43E72FAC7D9100B19E04 /* RFIDManager.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -67,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CB43E62FAC7D9100B19E04 /* RFIDManager.xcframework in Frameworks */,
 				C09EE0582DF189F2000D06CE /* libxlsxwriter in Frameworks */,
+				68CB44622FAD802400B19E04 /* RFIDManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +99,6 @@
 				C09EDFF02DF185CF000D06CE /* Frameworks */,
 				C09EDFF12DF185CF000D06CE /* Resources */,
 				68D882162FAC3E9C00A15ACA /* Embed ExtensionKit Extensions */,
-				68D882C62FAC6CD800A15ACA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +110,7 @@
 			name = RFIDTools;
 			packageProductDependencies = (
 				C09EE0572DF189F2000D06CE /* libxlsxwriter */,
+				68CB44612FAD802400B19E04 /* RFIDManager */,
 			);
 			productName = RFIDTools;
 			productReference = C09EDFF32DF185CF000D06CE /* RFIDTools.app */;
@@ -155,6 +143,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */,
+				68CB44602FAD802400B19E04 /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C09EDFF42DF185CF000D06CE /* Products */;
@@ -453,6 +442,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		68CB44602FAD802400B19E04 /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RFID-Devs/RFID-IOS-SDK.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jmcnamara/libxlsxwriter";
@@ -464,6 +461,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		68CB44612FAD802400B19E04 /* RFIDManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68CB44602FAD802400B19E04 /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */;
+			productName = RFIDManager;
+		};
 		C09EE0572DF189F2000D06CE /* libxlsxwriter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */;
