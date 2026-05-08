@@ -102,6 +102,7 @@
 
 // settings
 "Frequency" = "Frequency";
+"Frequency Region" = "Frequency Region";
 "Power" = "Power";
 "RFLink" = "RFLink";
 "Inventory Bank" = "Inventory Bank";

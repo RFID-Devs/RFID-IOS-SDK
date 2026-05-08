@@ -27,3 +27,4 @@ RFIDManager 是一个专为 Apple 平台设计的 RFID SDK，实现了完整的 
 
 - [RFIDManager API文档](https://rfid-devs.github.io/RFID-IOS-SDK)
 - [初识RFIDManager](https://rfid-devs.github.io/RFID-IOS-SDK/tutorials/meet-rfidmanager)
+- [RFIDTools (示例应用)](https://apps.apple.com/us/app/rfid-tools/id6504855704): 已上架 App Store，可下载安装作为集成参考

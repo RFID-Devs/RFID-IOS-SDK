@@ -22,7 +22,7 @@ struct SettingsUhfView: View {
 
             VStack {
                 HStack {
-                    Text("Frequency").frame(minWidth: 100, alignment: .leading)
+                    Text("Frequency Region").frame(minWidth: 100, alignment: .leading)
                     Spacer()
                     Picker("", selection: $viewModel.frequency) {
                         ForEach(RFIDFrequency.allCases) { fre in

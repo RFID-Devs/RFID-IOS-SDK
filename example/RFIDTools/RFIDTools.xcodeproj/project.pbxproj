@@ -7,11 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68D87FE62F9210BB00A15ACA /* RFIDManager in Frameworks */ = {isa = PBXBuildFile; productRef = 68D87FE52F9210BB00A15ACA /* RFIDManager */; };
+		68CB43E62FAC7D9100B19E04 /* RFIDManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */; };
+		68CB43E72FAC7D9100B19E04 /* RFIDManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C09EE0582DF189F2000D06CE /* libxlsxwriter in Frameworks */ = {isa = PBXBuildFile; productRef = C09EE0572DF189F2000D06CE /* libxlsxwriter */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		68D882162FAC3E9C00A15ACA /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D882C62FAC6CD800A15ACA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68CB43E72FAC7D9100B19E04 /* RFIDManager.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RFIDManager.xcframework; path = Lib/RFIDManager.xcframework; sourceTree = "<group>"; };
 		C09EDFF32DF185CF000D06CE /* RFIDTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFIDTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D87FE62F9210BB00A15ACA /* RFIDManager in Frameworks */,
+				68CB43E62FAC7D9100B19E04 /* RFIDManager.xcframework in Frameworks */,
 				C09EE0582DF189F2000D06CE /* libxlsxwriter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +95,7 @@
 		C09EE04E2DF188D8000D06CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68CB43E52FAC7D9100B19E04 /* RFIDManager.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +110,8 @@
 				C09EDFEF2DF185CF000D06CE /* Sources */,
 				C09EDFF02DF185CF000D06CE /* Frameworks */,
 				C09EDFF12DF185CF000D06CE /* Resources */,
+				68D882162FAC3E9C00A15ACA /* Embed ExtensionKit Extensions */,
+				68D882C62FAC6CD800A15ACA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,7 +123,6 @@
 			name = RFIDTools;
 			packageProductDependencies = (
 				C09EE0572DF189F2000D06CE /* libxlsxwriter */,
-				68D87FE52F9210BB00A15ACA /* RFIDManager */,
 			);
 			productName = RFIDTools;
 			productReference = C09EDFF32DF185CF000D06CE /* RFIDTools.app */;
@@ -107,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
+				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					C09EDFF22DF185CF000D06CE = {
@@ -127,7 +155,6 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */,
-				68D87FE42F9210BB00A15ACA /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C09EDFF42DF185CF000D06CE /* Products */;
@@ -289,12 +316,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RFIDTools/RFIDTools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BERXBR5X62;
 				ENABLE_APP_SANDBOX = YES;
-				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -304,18 +330,15 @@
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
 				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
 				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
-				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
 				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
 				ENABLE_RESOURCE_ACCESS_USB = YES;
-				ENABLE_USER_SELECTED_FILES = readwrite;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RFIDTools/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RFIDTools;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The application wants to turn on your Bluetooth for easy connection to hardware devices";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "The application requires your Bluetooth to be turned on to facilitate connection to hardware devices";
-				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "App needs access to Downloads documents";
-				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "App need access to external files";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The application need to use your location information to get directions to the device";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -353,12 +376,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RFIDTools/RFIDTools.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 15;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BERXBR5X62;
 				ENABLE_APP_SANDBOX = YES;
-				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -368,18 +390,15 @@
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
 				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
 				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
-				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
 				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
 				ENABLE_RESOURCE_ACCESS_USB = YES;
-				ENABLE_USER_SELECTED_FILES = readwrite;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RFIDTools/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RFIDTools;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The application wants to turn on your Bluetooth for easy connection to hardware devices";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "The application requires your Bluetooth to be turned on to facilitate connection to hardware devices";
-				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "App needs access to Downloads documents";
-				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "App need access to external files";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The application need to use your location information to get directions to the device";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,14 +453,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		68D87FE42F9210BB00A15ACA /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RFID-Devs/RFID-IOS-SDK.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jmcnamara/libxlsxwriter";
@@ -453,11 +464,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		68D87FE52F9210BB00A15ACA /* RFIDManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68D87FE42F9210BB00A15ACA /* XCRemoteSwiftPackageReference "RFID-IOS-SDK" */;
-			productName = RFIDManager;
-		};
 		C09EE0572DF189F2000D06CE /* libxlsxwriter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C09EE0562DF189F2000D06CE /* XCRemoteSwiftPackageReference "libxlsxwriter" */;

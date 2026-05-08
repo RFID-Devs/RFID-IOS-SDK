@@ -106,6 +106,7 @@
 
 // settings
 "Frequency" = "频率";
+"Frequency Region" = "频段区域";
 "Power" = "功率";
 "RFLink" = "链路";
 "Inventory Bank" = "盘点模式";
